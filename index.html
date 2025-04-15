@@ -3,42 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini-Project RevoU</title>
 
     <!-- CSS External -->
      <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
     <!-- Header Content -->
-    <header>
+    <header class="main-header">
       <!-- Logo -->
-      <div></div>
+      <div><img class="main-logo" src="assets/logo.jpg" alt="Logo"></div>
       
       <!-- Navigation -->
-      <nav>
-        <a href="home-section">Home</a>
-        <a href="about-us-section">About Us</a>
-        <a href="portofolio-section">Portofolio</a>
-        <a href="message-us-section">Message Us</a>
+      <nav class="navbar">
+        <ul class="nav-link">
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#product-section">Out Product</a></li>
+          <li><a href="#about-us-section">About Us</a></li>
+          <li><a href="#message-us-section">Message Us</a></li>
+        </ul>
       </nav>
     </header>
 
     <!-- Main Content -->
     <main>
         <!-- Home Section -->
-        <section id="home-section"></section>
+        <section id="home-section">
+          <header class="hero-section">
+            <div class="hero-container">
+              <div class="hero-image" style="width: 30rem;">
+                <img src="assets/hero.png" alt="Gambar Header">
+              </div>
+              <div class="hero-text">
+                <h1>Selamat Datang __</h1>
+                <p>Men Craft menyediakan Gift yang luar biasa di Makassar.</p>
+                <a href="#message-us-section" class="cta-button">Hubungi Kami</a>
+              </div>
+            </div>
+          </header>          
+        </section>
 
-        <!-- About us Section -->
-        <section id="about-us-section"></section>
-
-        <!-- Portofolio Section -->
-        <section id="portofolio-section"></section>
+        <!-- Product Section -->
+        <section class="product-section" id="product-section">
+          <h2 class="section-title">Our Product</h2>
+          <div class="product-grid">
+            <div class="product-card">
+              <img src="assets/product1.jpg" alt="Product 1">
+              <p class="product-price">Rp 125.000</p>
+            </div>
+            <div class="product-card">
+              <img src="assets/product2.jpg" alt="Product 2">
+              <p class="product-price">Rp 230.000</p>
+            </div>
+            <div class="product-card">
+              <img src="assets/product3.jpg" alt="Product 3">
+              <p class="product-price">Rp 128.000</p>
+            </div>
+            <div class="product-card">
+              <img src="assets/product4.jpg" alt="Product 4">
+              <p class="product-price">Rp 225.000</p>
+            </div>
+            <div class="product-card">
+              <img src="assets/product5.jpg" alt="Product 5">
+              <p class="product-price">Rp 325.000</p>
+            </div>
+            <div class="product-card">
+              <img src="assets/product6.jpg" alt="Product 6">
+              <p class="product-price">Rp 125.000</p>
+            </div>
+          </div>
+        </section>
+        
+        <!-- About Us Section -->
+        <section id="about-us-section" class="about-section">
+          <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+              Kami menghadirkan keindahan melalui rangkaian bucket bunga yang dirancang penuh cinta.
+              Setiap bunga kami pilih dengan teliti untuk membantu Anda mengekspresikan perasaan dalam momen spesial.
+            </p>
+            <p>
+              Dari hadiah ulang tahun hingga ucapan terima kasih, kami percaya bahwa satu bucket bunga bisa membawa senyum dan kehangatan bagi siapa pun yang menerimanya.
+            </p>
+          </div>
+        </section>
 
         <!-- Message Us Section -->
         <section id="message-us-section"></section>
-
     </main>
-
     <!-- Footer -->
     <footer>
 
