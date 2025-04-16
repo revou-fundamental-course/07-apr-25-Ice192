@@ -35,7 +35,7 @@
                 <img src="assets/hero.png" alt="Gambar Header">
               </div>
               <div class="hero-text">
-                <h1>Selamat Datang __</h1>
+                <h1>Selamat Datang <strong id="user-name">'Guest'</strong></h1>
                 <p>Men Craft menyediakan Gift yang luar biasa di Makassar.</p>
                 <a href="#message-us-section" class="cta-button">Hubungi Kami</a>
               </div>
@@ -87,13 +87,52 @@
             </p>
           </div>
         </section>
+        <!-- Massage us Section -->
+        <section class="contact-section" id="message-us-section">
+          <div class="contact-container">
+            
+            <!-- Form Area -->
+            <div class="form-area">
+              <h2>Message Us</h2>
+              <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="date" name="birth-date" required />
+        
+                <div class="gender-options">
+                  <label><input type="radio" name="gender" value="Male" required /> Male</label>
+                  <label><input type="radio" name="gender" value="Female" /> Female</label>
+                </div>
+        
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+        
+            <!-- Output Area -->
+            <div class="output-area">
+              <h2>Form Result</h2>
+              <div id="result-display"></div>
+            </div>
+        
+          </div>
+        </section>
+        
+        <!-- Hubungkan JavaScript -->
+        <script src="js/script.js"></script>
+        
 
-        <!-- Message Us Section -->
-        <section id="message-us-section"></section>
     </main>
-    <!-- Footer -->
-    <footer>
-
+    <footer class="footer">
+      <div class="footer-content">
+        <span class="brand-name">Men Craft</span>
+        <div class="social-icons">
+          <a href="#"><img src="assets/whatsapp_logo.png" alt="Whatsapp" /></a>
+          <a href="#"><img src="assets/instagram_logo.png" alt="Instagram" /></a>
+        </div>
+      </div>
     </footer>
+    
 </body>
+
 </html>
