@@ -31,11 +31,11 @@
         <section id="home-section">
           <header class="hero-section">
             <div class="hero-container">
-              <div class="hero-image" style="width: 30rem;">
-                <img src="assets/hero.png" alt="Gambar Header">
+              <div class="hero-image" >
+                <img id="slideshow-image" src="assets/hero1.png" alt="Gambar Header">
               </div>
               <div class="hero-text">
-                <h1>Selamat Datang <strong id="user-name">'Guest'</strong></h1>
+                <h1>Welcome <strong id="user-name"> Guest</strong></h1>
                 <p>Men Craft menyediakan Gift yang luar biasa di Makassar.</p>
                 <a href="#message-us-section" class="cta-button">Hubungi Kami</a>
               </div>
@@ -95,9 +95,14 @@
             <div class="form-area">
               <h2>Message Us</h2>
               <form id="contact-form">
+
+                <label for="name">Name</label>
                 <input type="text" name="name" placeholder="Your Name" required />
+
+                <label for="birth-date">Birth Date</label>
                 <input type="date" name="birth-date" required />
-        
+
+                <label>Gender</label>
                 <div class="gender-options">
                   <label><input type="radio" name="gender" value="Male" required /> Male</label>
                   <label><input type="radio" name="gender" value="Female" /> Female</label>
@@ -123,6 +128,8 @@
         
 
     </main>
+
+      <!-- Footer -->
     <footer class="footer">
       <div class="footer-content">
         <span class="brand-name">Men Craft</span>
