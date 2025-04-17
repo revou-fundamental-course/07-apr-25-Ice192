@@ -164,7 +164,7 @@ body{
   
   /* About Us Section */
   .about-section {
-    background-image: url('/assets/bg-about-us.jpg');
+    background-color: rebeccapurple;
     background-size: cover;
     background-position: center;
     padding: 100px;
