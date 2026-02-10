@@ -1,145 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini-Project RevoU</title>
-
-    <!-- CSS External -->
-     <link rel="stylesheet" href="css\style.css">
-</head>
-<body>
-    <!-- Header Content -->
-    <header class="main-header">
-      <!-- Logo -->
-      <div><img class="main-logo" src="assets/logo.jpg" alt="Logo"></div>
-      
-      <!-- Navigation -->
-      <nav class="navbar">
-        <ul class="nav-link">
-          <li><a href="#home-section">Home</a></li>
-          <li><a href="#product-section">Out Product</a></li>
-          <li><a href="#about-us-section">About Us</a></li>
-          <li><a href="#message-us-section">Message Us</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Home Section -->
-        <section id="home-section">
-          <header class="hero-section">
-            <div class="hero-container">
-              <div class="hero-image" >
-                <img id="slideshow-image" src="assets/hero1.png" alt="Gambar Header">
-              </div>
-              <div class="hero-text">
-                <h1>Welcome <strong id="user-name"> Guest</strong></h1>
-                <p>Men Craft menyediakan Gift yang luar biasa di Makassar.</p>
-                <a href="#message-us-section" class="cta-button">Hubungi Kami</a>
-              </div>
-            </div>
-          </header>          
-        </section>
-
-        <!-- Product Section -->
-        <section class="product-section" id="product-section">
-          <h2 class="section-title">Our Product</h2>
-          <div class="product-grid">
-            <div class="product-card">
-              <img src="assets/product1.jpg" alt="Product 1">
-              <p class="product-price">Rp 125.000</p>
-            </div>
-            <div class="product-card">
-              <img src="assets/product2.jpg" alt="Product 2">
-              <p class="product-price">Rp 230.000</p>
-            </div>
-            <div class="product-card">
-              <img src="assets/product3.jpg" alt="Product 3">
-              <p class="product-price">Rp 128.000</p>
-            </div>
-            <div class="product-card">
-              <img src="assets/product4.jpg" alt="Product 4">
-              <p class="product-price">Rp 225.000</p>
-            </div>
-            <div class="product-card">
-              <img src="assets/product5.jpg" alt="Product 5">
-              <p class="product-price">Rp 325.000</p>
-            </div>
-            <div class="product-card">
-              <img src="assets/product6.jpg" alt="Product 6">
-              <p class="product-price">Rp 125.000</p>
-            </div>
-          </div>
-        </section>
-        
-        <!-- About Us Section -->
-        <section id="about-us-section" class="about-section">
-          <div class="about-content">
-            <h2>About Us</h2>
-            <p>
-              Kami menghadirkan keindahan melalui rangkaian bucket bunga yang dirancang penuh cinta.
-              Setiap bunga kami pilih dengan teliti untuk membantu Anda mengekspresikan perasaan dalam momen spesial.
-            </p>
-            <p>
-              Dari hadiah ulang tahun hingga ucapan terima kasih, kami percaya bahwa satu bucket bunga bisa membawa senyum dan kehangatan bagi siapa pun yang menerimanya.
-            </p>
-          </div>
-        </section>
-        <!-- Massage us Section -->
-        <section class="contact-section" id="message-us-section">
-          <div class="contact-container">
-            
-            <!-- Form Area -->
-            <div class="form-area">
-              <h2>Message Us</h2>
-              <form id="contact-form">
-
-                <label for="name">Name</label>
-                <input type="text" name="name" placeholder="Your Name" required />
-
-                <label for="birth-date">Birth Date</label>
-                <input type="date" name="birth-date" required />
-
-                <label>Gender</label>
-                <div class="gender-options">
-                  <label><input type="radio" name="gender" value="Male" required /> Male</label>
-                  <label><input type="radio" name="gender" value="Female" /> Female</label>
-                </div>
-        
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        
-                <button type="submit">Submit</button>
-              </form>
-            </div>
-        
-            <!-- Output Area -->
-            <div class="output-area">
-              <h2>Form Result</h2>
-              <div id="result-display"></div>
-            </div>
-        
-          </div>
-        </section>
-        
-        <!-- Hubungkan JavaScript -->
-        <script src="js/script.js"></script>
-        
-
-    </main>
-
-      <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-content">
-        <span class="brand-name">Men Craft</span>
-        <div class="social-icons">
-          <a href="#"><img src="assets/whatsapp_logo.png" alt="Whatsapp" /></a>
-          <a href="#"><img src="assets/instagram_logo.png" alt="Instagram" /></a>
-        </div>
-      </div>
-    </footer>
-    
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soft Minimal Art Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
